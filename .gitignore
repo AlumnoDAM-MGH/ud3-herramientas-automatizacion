@@ -1,0 +1,2 @@
+# Ignoramos los ficheros en bytecode
+*.class
