@@ -1,0 +1,18 @@
+<project name="saludaAnt">
+    <target name="clean">
+        <delete dir="classes" />
+    </target>
+ 
+    <target name="compile" depends="clean">
+        <mkdir dir="classes" />
+ <javac includeantruntime="false" srcdir="src/com/mgh/edd" destdir="classes" />
+    </target>
+ 
+    <target name="run" depends="compile">
+        <property name="arg0" value=""/>
+        <java classpath="classes" classname="com.mgh.edd.Hola">
+            <arg value="${arg0}"/>
+        </java>
+
+    </target>
+</project>
