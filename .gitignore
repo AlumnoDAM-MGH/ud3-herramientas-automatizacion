@@ -1,2 +1,4 @@
 # Ignoramos los ficheros en bytecode
 *.class
+target/
+build/
